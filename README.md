@@ -92,14 +92,14 @@ Module contains 4 test cases with specified scenarios:
    * Go to home page and check that topbar is visible
    
    
-2)  DisableTopbarTest:
+2) DisableTopbarTest:
 
    `Requirements which must be fulfilled before test start: none`
-
+   
    Test scenario:
    * Log in to admin panel
    * Go to Stores => Configuration => Divante Extensions => Topbar
-   * Set Topbar as Enabled
+   * Set Topbar as Disabled
    * Go to home page and check that topbar is not visible
    
    
