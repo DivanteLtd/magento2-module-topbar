@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Divante\Topbar
+ * @author Marek Mularczyk <mmularczyk@divante.pl>
+ * @copyright 2017 Divante Sp. z o.o.
+ * @license See LICENSE_DIVANTE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/variations.xsd">
+    <testCase name="Divante\Topbar\Test\TestCase\EnableTopbarTest" summary="Enable topbar">
+        <variation name="EnableTopbarTestVariation1_enabled" summary="Enable topbar feature">
+            <data name="scope" xsi:type="string">general</data>
+            <data name="scope_id" xsi:type="string">1</data>
+            <data name="path" xsi:type="string">divante/topbar/enabled</data>
+            <data name="value" xsi:type="string">Yes</data>
+            <constraint name="Divante\Topbar\Test\Constraint\AssertConfigurationSaveMessage" />
+            <constraint name="Divante\Topbar\Test\Constraint\AssertTopbarVisibleOnFrontend" />
+        </variation>
+    </testCase>
+</config>

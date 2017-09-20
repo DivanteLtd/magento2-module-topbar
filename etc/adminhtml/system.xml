@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package  Divante\Topbar
+ * @author Marek Mularczyk <mmularczyk@divante.pl>
+ * @copyright 2017 Divante Sp. z o.o.
+ * @license See LICENSE_DIVANTE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="divante" translate="label" sortOrder="1">
+            <label>Divante Extensions</label>
+        </tab>
+        <section id="divante" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Topbar</label>
+            <tab>divante</tab>
+            <resource>Divante_Topbar::system_config</resource>
+            <group id="topbar" translate="label" type="text" sortOrder="5" showInDefault="1" showInStore="1"
+                   showInWebsite="1">
+                <label>Settings</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1"
+                       showInStore="1" showInWebsite="1">
+                    <label>Enable Topbar</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

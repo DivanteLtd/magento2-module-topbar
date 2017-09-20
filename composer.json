@@ -1,0 +1,28 @@
+{
+    "name": "divante/module-topbar",
+    "description": "Divante module topbar which adds topbar on top of the page. Module tested via MTF(Magento Testing Framework)",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Marek Mularczyk",
+            "email": "mmularczyk@divante.pl"
+        }
+    ],
+    "require": {
+        "php": "~5.6.0|7.0.2|~7.0.6",
+        "magento/framework": "100.1.*",
+        "magento/module-store": "100.1.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Divante\\Topbar\\": ""
+        }
+    }
+}

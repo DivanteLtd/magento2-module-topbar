@@ -1,0 +1,28 @@
+<?php
+/**
+ * @package   Divante\Topbar
+ * @author    Marek Mularczyk <mmularczyk@divante.pl>
+ * @copyright 2017 Divante Sp. z o.o.
+ * @license   See LICENSE_DIVANTE.txt for license details.
+ */
+
+use Divante\Topbar\Block\Header\Topbar;
+
+/** @var Topbar $block */
+?>
+<?php if ($block->isEnabled()) : ?>
+    <div class="header-top-bar">
+        <div class="email">
+            <span><?php echo $block->getSupportEmail(); ?></span>
+        </div>
+        <div class="phone">
+            <a href="tel:<?php echo trim($block->getSupportPhone()); ?>">
+                <span><?php echo __('Customer Service') . ': '; ?></span>
+                <span><?php echo $block->getSupportPhone(); ?></span>
+            </a>
+        </div>
+        <div class="links">
+            <a href="<?php echo $block->getLoginUrl(); ?>"><?php echo __('Login') . ' / ' . __('Register'); ?></a>
+        </div>
+    </div>
+<?php endif; ?>

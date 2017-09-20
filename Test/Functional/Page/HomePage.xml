@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Divante\Topbar
+ * @author Marek Mularczyk <mmularczyk@divante.pl>
+ * @copyright 2017 Divante Sp. z o.o.
+ * @license See LICENSE_DIVANTE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/pages.xsd">
+    <page name="HomePage" mca="cms/index" module="Divante_Topbar">
+        <block name="topbar" class="Divante\Topbar\Test\Block\Header\Topbar" locator=".header-top-bar" strategy="css selector" />
+    </page>
+</config>

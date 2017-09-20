@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Divante\Topbar
+ * @author Marek Mularczyk <mmularczyk@divante.pl>
+ * @copyright 2017 Divante Sp. z o.o.
+ * @license See LICENSE_DIVANTE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/Magento/Mtf/Repository/etc/repository.xsd">
+    <repository class="Divante\Topbar\Test\Repository\ConfigData">
+        <dataset name="phone_config_information">
+            <field name="general/store_information/phone" xsi:type="array">
+                <item name="scope" xsi:type="string">general</item>
+                <item name="scope_id" xsi:type="number">1</item>
+                <item name="label" xsi:type="string"/>
+                <item name="value" xsi:type="string">1234-123-123</item>
+            </field>
+        </dataset>
+        <dataset name="email_config_information">
+            <field name="trans_email/ident_support/email" xsi:type="array">
+                <item name="scope" xsi:type="string">general</item>
+                <item name="scope_id" xsi:type="number">1</item>
+                <item name="label" xsi:type="string"/>
+                <item name="value" xsi:type="string">test@test.pl</item>
+            </field>
+        </dataset>
+    </repository>
+</config>

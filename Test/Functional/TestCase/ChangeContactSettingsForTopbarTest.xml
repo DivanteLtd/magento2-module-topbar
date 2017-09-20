@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Divante\Topbar
+ * @author Marek Mularczyk <mmularczyk@divante.pl>
+ * @copyright 2017 Divante Sp. z o.o.
+ * @license See LICENSE_DIVANTE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/variations.xsd">
+    <testCase name="Divante\Topbar\Test\TestCase\ChangeContactSettingsForTopbarTest" summary="Change contact for topbar">
+        <variation name="ChangeContactSettingsForTopbarTestVariation1_email" summary="Change contact phone for topbar">
+            <data name="emailConfig/dataset" xsi:type="string">email_config_information</data>
+            <constraint name="Divante\Topbar\Test\Constraint\AssertConfigurationSaveMessage" />
+            <constraint name="Divante\Topbar\Test\Constraint\AssertContactVisibleOnFrontendHome" />
+        </variation>
+    </testCase>
+</config>
