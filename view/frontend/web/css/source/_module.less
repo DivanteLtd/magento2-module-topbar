@@ -1,0 +1,54 @@
+// /**
+// * @package Divante\Topbar
+// * @author Marek Mularczyk <kchara@divante.pl>
+// * @copyright 2017 Divante Sp. z o.o.
+// * @license See LICENSE_DIVANTE.txt for license details.
+// */
+
+.header-top-bar {
+  align-items: center;
+  color: @color-white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+
+  > * {
+    flex: 1 1 33%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  > div,
+  > div a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    > span {
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &:first-child {
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+
+  .fa {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
