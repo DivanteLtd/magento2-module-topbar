@@ -9,7 +9,7 @@
 namespace Divante\Topbar\Test\TestCase;
 
 use Magento\Mtf\TestCase\Injectable;
-use Magento\Backend\Test\Page\Adminhtml\SystemConfigEdit;
+use Divante\Topbar\Test\Page\Adminhtml\SystemConfigEditSectionDivante;
 
 /**
  * Class DisableTopbarTest.php.
@@ -25,7 +25,7 @@ use Magento\Backend\Test\Page\Adminhtml\SystemConfigEdit;
 class DisableTopbarTest extends Injectable
 {
     /**
-     * @var SystemConfigEdit
+     * @var SystemConfigEditSectionDivante
      */
     private $configPage;
 
@@ -52,9 +52,9 @@ class DisableTopbarTest extends Injectable
     /**
      * Class preparation
      *
-     * @param SystemConfigEdit $configPage
+     * @param SystemConfigEditSectionDivante $configPage
      */
-    public function __inject(SystemConfigEdit $configPage)
+    public function __inject(SystemConfigEditSectionDivante $configPage)
     {
         $this->configPage = $configPage;
     }
@@ -74,7 +74,7 @@ class DisableTopbarTest extends Injectable
 
         $this->selector['tab']   = $parts[0];
         $this->selector['group'] = $parts[1];
-        $this->selector['field']  = $parts[2];
+        $this->selector['field'] = $parts[2];
 
         $storeInformation = $this->configPage->getForm()->getGroup($this->selector['tab'], $this->selector['group']);
 

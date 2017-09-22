@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Divante\Topbar
+ * @author Marek Mularczyk <mmularczyk@divante.pl>
+ * @copyright 2017 Divante Sp. z o.o.
+ * @license See LICENSE_DIVANTE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../vendor/magento/mtf/etc/pages.xsd">
+    <page name="SystemConfigEditSectionDivante" area="Adminhtml" mca="admin/system_config/edit/section/divante" module="Divante_Topbar">
+        <block name="pageActions" class="Magento\Backend\Test\Block\System\Config\PageActions" locator=".page-main-actions" strategy="css selector" />
+        <block name="form" class="Magento\Backend\Test\Block\System\Config\Form" locator="#config-edit-form" strategy="css selector" />
+        <block name="messagesBlock" class="Magento\Backend\Test\Block\Messages" locator="#messages" strategy="css selector" />
+        <block name="modalBlock" class="Magento\Ui\Test\Block\Adminhtml\Modal" locator="._show[data-role=modal]" strategy="css selector" />
+    </page>
+</config>

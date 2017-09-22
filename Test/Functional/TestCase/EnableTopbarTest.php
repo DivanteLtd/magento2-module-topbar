@@ -9,7 +9,7 @@
 namespace Divante\Topbar\Test\TestCase;
 
 use Magento\Mtf\TestCase\Injectable;
-use Magento\Backend\Test\Page\Adminhtml\SystemConfigEdit;
+use Divante\Topbar\Test\Page\Adminhtml\SystemConfigEditSectionDivante;
 
 /**
  * Class EnableTopbarTest.
@@ -25,7 +25,7 @@ use Magento\Backend\Test\Page\Adminhtml\SystemConfigEdit;
 class EnableTopbarTest extends Injectable
 {
     /**
-     * @var SystemConfigEdit
+     * @var SystemConfigEditSectionDivante
      */
     private $configPage;
 
@@ -52,9 +52,9 @@ class EnableTopbarTest extends Injectable
     /**
      * Class preparation
      *
-     * @param SystemConfigEdit $configPage
+     * @param SystemConfigEditSectionDivante $configPage
      */
-    public function __inject(SystemConfigEdit $configPage)
+    public function __inject(SystemConfigEditSectionDivante $configPage)
     {
         $this->configPage = $configPage;
     }

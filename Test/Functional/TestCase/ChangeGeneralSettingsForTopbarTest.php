@@ -9,7 +9,7 @@
 namespace Divante\Topbar\Test\TestCase;
 
 use Magento\Mtf\TestCase\Injectable;
-use Magento\Backend\Test\Page\Adminhtml\SystemConfigEdit;
+use Divante\Topbar\Test\Page\Adminhtml\SystemConfigEditSectionGeneral;
 use Divante\Topbar\Test\Repository\ConfigData;
 
 /**
@@ -28,7 +28,7 @@ use Divante\Topbar\Test\Repository\ConfigData;
 class ChangeGeneralSettingsForTopbarTest extends Injectable
 {
     /**
-     * @var SystemConfigEdit
+     * @var SystemConfigEditSectionGeneral
      */
     private $configPage;
 
@@ -47,7 +47,7 @@ class ChangeGeneralSettingsForTopbarTest extends Injectable
 
     /* Variables for organization end*/
 
-    public function __inject(SystemConfigEdit $configPage)
+    public function __inject(SystemConfigEditSectionGeneral $configPage)
     {
         $this->configPage = $configPage;
     }
