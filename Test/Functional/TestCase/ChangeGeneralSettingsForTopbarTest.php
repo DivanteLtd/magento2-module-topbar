@@ -32,8 +32,6 @@ class ChangeGeneralSettingsForTopbarTest extends Injectable
      */
     private $configPage;
 
-    protected $phoneConfig;
-
     /* Variables for organization */
     /**
      * @var ConfigData
@@ -47,11 +45,21 @@ class ChangeGeneralSettingsForTopbarTest extends Injectable
 
     /* Variables for organization end*/
 
+    /**
+     * Class preparation
+     *
+     * @param SystemConfigEditSectionGeneral $configPage
+     */
     public function __inject(SystemConfigEditSectionGeneral $configPage)
     {
         $this->configPage = $configPage;
     }
 
+    /**
+     * Test execution method
+     *
+     * @param ConfigData $configData
+     */
     public function test(ConfigData $configData)
     {
         $this->configData = $configData;

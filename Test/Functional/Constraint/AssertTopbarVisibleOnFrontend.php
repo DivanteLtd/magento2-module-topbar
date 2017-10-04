@@ -41,6 +41,6 @@ class AssertTopbarVisibleOnFrontend extends AbstractConstraint
      */
     public function toString()
     {
-        return 'Configuration visible on home page.';
+        return 'Topbar visible on home page.';
     }
 }
