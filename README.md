@@ -10,7 +10,7 @@ Module Topbar adds simple topbar on top of the page with 3 sections:
     
 But default module destiny was to test it via MTF(Magento Testing Framework).
 
-## Who is developing Grouped Products Manager ?
+## Who is developing Topbar ?
 <p align="center">
     <a href="https://divante.co/">
         <img height="110" src="http://oex.pl/content/uploads/2015/05/logo_Divante-1.jpg">
